@@ -1,0 +1,170 @@
+/* Style global */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('wavenfond.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Bannière translucide en haut */
+header {
+    background: rgba(0, 58, 126, 0.8); /* Bleu légèrement plus foncé et un peu plus translucide */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Logo vidéo rond centré en haut */
+.logo-container {
+    background-color: rgba(0, 58, 126, 0.7); /* Arrière-plan du logo */
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    top: -40px; /* Coller le logo en haut */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    width: 100px; /* Taille réduite du logo */
+    height: 100px;
+    object-fit: cover; /* Pour ajuster la vidéo à l'intérieur du cercle */
+    border-radius: 50%;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #0a7fff; /* Bleu */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding-left: 25px; /* Décalage pour losange */
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* Losange devant les onglets */
+.losange::before {
+    content: '♦';
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: #0a7fff; /* Bleu */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Placer l'onglet Panier à droite */
+nav ul li:last-child {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Section principale */
+main {
+    padding-top: 140px; /* Pour laisser de la place à la bannière et au logo */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Encadré central pour tout le texte */
+.main-content {
+    background: rgba(0, 58, 126, 0.8); /* Bleu de la bannière mais un peu plus transparent */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    max-width: 900px;
+}
+
+/* Titres */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Section spécifique */
+section {
+    margin-bottom: 40px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Icône Panier devant le texte */
+#panier {
+    font-size: 18px;
+}
+
+/* Ajustements pour le panier */
+#panier::before {
+    content: "🛒";
+    margin-right: 8px;
+}
+
+/* Ajustement des losanges */
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Footer ajustement */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Fixer l'onglet Panier tout à droite */
+#panier {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+/* Styles de la bannière de navigation */
+header {
+    background: rgba(0, 58, 126, 0.8); /* Reprendre la couleur bleue légèrement plus foncée */
+    color: white;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+/* Mise en forme des sections principales */
+section h2 {
+    font-size: 1.8rem;
+    color: #fff;
+}
